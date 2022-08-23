@@ -79,7 +79,7 @@ h1{
     color: #6158b8;
     font-weight: 700;
     font-size: 0.8em;
-    margin-left: 135%;
+    margin-left: 130%;
 }
 
 #panier a:hover{
@@ -135,5 +135,18 @@ h1{
 
     .attribution{
         font-size: 0.9em;
+    }
+
+    #boutton_paiement{
+        margin: 10% 10%;
+    }
+
+    #panier{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #panier a{
+        margin-left: 185%;
     }
 }
