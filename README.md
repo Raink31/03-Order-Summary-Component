@@ -1,2 +1,2 @@
-# 03 - NFT-preview-card-component
+# 03 - Order Summary Component
 Frontend mentor 3rd free challenge
