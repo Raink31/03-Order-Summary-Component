@@ -4,6 +4,7 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url("images/pattern-background-desktop.svg") no-repeat;
@@ -14,8 +15,6 @@ body{
 
 #main{
     text-align: center;
-    margin-top: 40%;
-    margin-bottom: 40%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px hsla(223, 47%, 23%, 0.226);
@@ -123,9 +122,18 @@ h1{
     margin-bottom: 10%;
 }       
 
+.attribution{
+    margin-top: 1%;
+    font-size: 0.8em;
+}
+
 @media screen and (min-width: 400px)
 {
     #hero{
         width: 400px;
+    }
+
+    .attribution{
+        font-size: 0.9em;
     }
 }
