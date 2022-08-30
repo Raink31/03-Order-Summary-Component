@@ -11,7 +11,7 @@ Your challenge is to build out this card component and get it looking as close t
 ## Screenshot
 
 ### Screenshot
-![mobile screenshot](./images/mobile.png)
+![screenshot](./assets/images/desktop.png)
 
 
 ## Links
