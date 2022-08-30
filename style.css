@@ -1,152 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* CSS */
 
 body{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("images/pattern-background-desktop.svg") no-repeat;
-    background-color: hsl(225, 100%, 94%);
-    margin: auto;
+    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: #e0e8ff;
 }
 
-#main{
+.container{
+    max-width: 375px;
+}
+
+.wrapper{
+    background-color: white;
     text-align: center;
     border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 0 20px hsla(223, 47%, 23%, 0.226);
+    overflow: hidden;
+    margin: 0.5rem;
+    box-shadow: 0 0 10px rgba(155, 161, 212, 0.301);
 }
 
-#hero{
-    width: 330px;
-    border-radius: 20px 20px 0 0;
+.img-box{
+    height: 100%;
+    object-fit: cover;
 }
 
-h1{
-    margin-top: 7%;
-    margin-bottom: 7%;
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-box{
+    padding: 1.5rem;
+}
+
+.text-box h1{
     color: hsl(223, 47%, 23%);
-    font-size: 1.4em;
     font-weight: 900;
+    font-size: 1.5em;
 }
 
-#description{
+.subtitle{
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    padding-top: 1rem;
     color: hsl(224, 23%, 55%);
-    font-size: 0.95em;
-    line-height: 25px;
+    line-height: 30px;
 }
 
-#panier{
-    margin-top: 7%;
+.card{
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
     border-radius: 10px;
-    margin-left: 7%;
-    margin-right: 7%;
-    height: 75px;
 }
 
-#panier img{
-    margin-left: 5%;
-    width: 45px;
-    margin-right: 0;
+.music-icon{
+    margin-right: -1.1rem;
 }
 
-#article{
+.product{
     text-align: start;
-    margin-left: 7%;
 }
 
-#article h2{
+.product strong{
+    font-size: 0.95em;
     color: hsl(223, 47%, 23%);
-    font-size: 0.9em;
     font-weight: 900;
-    margin-bottom: 0;
 }
 
-#article p{
-    margin-top: 5%;
+.product span{
     color: hsl(224, 23%, 55%);
-    font-size: 0.92em;
+    font-size: 0.98em;
 }
 
-#panier a{
-    color: #6158b8;
+.change a{
+    color: hsl(245, 75%, 52%);
     font-weight: 700;
-    font-size: 0.8em;
-    margin-left: 130%;
+    transition: color 0.4s;
 }
 
-#panier a:hover{
-    color: #766cf1;
-    transition: 0.2s;
+.change a:hover{
+    color: hsl(245, 83%, 68%);
 }
 
-#boutton_paiement{
-    background-color: #382ae1;
+.canceler{
+    padding-top: 1.5rem;
+}
+
+.boutton{
+    margin-top: 1.5rem;
+    background-color: hsl(245, 75%, 52%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     border-radius: 10px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 7% 7%;
-    padding-bottom: 2%;
-    box-shadow: 0 15px 10px #6258b838;
+    box-shadow: 0 15px 15px hsl(245, 75%, 52%, 30%);
+    transition: background-color 0.4s;
 }
 
-#boutton_paiement:hover{
+.boutton:hover{
+    background-color: hsl(245, 83%, 68%);
     cursor: pointer;
-    background-color: #766cf1;
-    transition: 0.2s;
 }
 
-#boutton_paiement a{
+.boutton a{
     color: white;
     text-decoration: none;
-    font-size: 0.7em;
+    font-weight: 700;
 }
 
-#cancel_order a{    
-    color: hsl(224, 23%, 55%);
+.canceler{
+    margin-top: 0.2rem;
     font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+.canceler a{
+    color: hsl(224, 23%, 55%);
     text-decoration: none;
-    font-size: 1em;
+    transition: color 0.4s;
 }
 
-#cancel_order{
-    margin-bottom: 10%;
-}       
-
-.attribution{
-    margin-top: 1%;
-    font-size: 0.8em;
+.canceler a:hover{
+    color: hsl(228, 57%, 12%);
 }
 
-@media screen and (min-width: 560px)
-{
-    #hero{
-        width: 400px;
+footer{
+    font-size: 0.9em;
+}
+
+footer a{
+    color: hsl(245, 75%, 52%);
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background: url("assets/images/pattern-background-desktop.svg") repeat-x top;
+        background-color: #e0e8ff;
     }
 
-    .attribution{
-        font-size: 0.9em;
+    .container{
+        max-width: 420px;
     }
 
-    #boutton_paiement{
-        margin: 10% 10%;
+    .text-box h1{
+        font-size: 1.7em;
     }
 
-    #panier{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #panier a{
-        margin-left: 185%;
-    }
+    .music-icon{
+    margin-right: -4.5rem;
+}
 }
